@@ -27,4 +27,8 @@ Route::get('/hobby', function () {
 
 Route::get('/contact', function () {
     return view('contact');
-})->name('contact');
+})->name('contact_me');
+
+Route::get('/main', function () {
+    return view('index');
+})->name('main');
