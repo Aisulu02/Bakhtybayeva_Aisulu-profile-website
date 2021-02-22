@@ -21,3 +21,10 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::get('/hobby', function () {
+    return view('hobby');
+})->name('hobby');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');

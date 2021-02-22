@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>About me</title>
+<title>My hobbies</title>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@500;700&family=Karla:wght@700&family=Lexend+Peta&family=Lobster&family=Mukta:wght@600&family=Tajawal&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+
 </head>
 <body>
 <style>
@@ -40,28 +42,28 @@ em{
 	border:3px solid white;
 	cursor:pointer;
 }
-.main{
-position:absolute;
-top:110px;
-display:flex;
-justify-content:center;
-}
-.dg{
-}
 h1{
 font-size:60px;
 	color:white;
 	font-family: 'Dancing Script', cursive;
 	
 }
-p{
-font-size:30px;
-	color:white;
-	font-family: 'Dancing Script', cursive;
-	
+.main{
+position:absolute;
+top:50px;
+width:100%;
+text:center;
+
 }
-.texts{
-width:50%;
+.ins{
+display:flex;
+justify-content:center;
+text-align:center;
+width:100%;
+}
+.inside{
+text-align:center;
+width:100%;
 }
 </style>
 
@@ -76,16 +78,13 @@ width:50%;
 </div>
 
 <div class="main">
-<div><img src="img/original.jpg" style="width:70%;border:3px solid white;"/></div>
-<div class="texts">
-<h1>About me</h1>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl diam, congue at lorem id, gravida consectetur mi. Etiam sed placerat mi.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl diam, congue at lorem id, gravida consectetur mi. Etiam sed placerat mi.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl diam, congue at lorem id, gravida consectetur mi. Etiam sed placerat mi.
-</p>
+<div class="inside"><h1>Hobbies</h1></div>
+<div class="ins">
+<div><img src="img/dan.jpg" style="width:60%;border:3px solid white;"/></div>
+<div><img src="img/EPD1ssLX0AIOfFG.jpg" style="width:80%;border:3px solid white;"/></div>
 </div>
 </div>
+
 
 </body>
 </html>

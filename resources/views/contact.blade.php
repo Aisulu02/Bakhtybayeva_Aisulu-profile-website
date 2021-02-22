@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>About me</title>
+<title>Contact me</title>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@500;700&family=Karla:wght@700&family=Lexend+Peta&family=Lobster&family=Mukta:wght@600&family=Tajawal&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -40,13 +40,13 @@ em{
 	border:3px solid white;
 	cursor:pointer;
 }
-.main{
-position:absolute;
-top:110px;
+.ctc{
 display:flex;
 justify-content:center;
-}
-.dg{
+position:absolute;
+top:80px;
+text-align:center;
+width:100%;
 }
 h1{
 font-size:60px;
@@ -54,14 +54,24 @@ font-size:60px;
 	font-family: 'Dancing Script', cursive;
 	
 }
-p{
+.main{
+margin:20px;
+width:50%;
+}
+input{
+width:70%;
+margin:10px;
+padding:11px;
+}
+#im{
+border:3px solid white;
+}
+button{
+padding:10px;
 font-size:30px;
-	color:white;
+
 	font-family: 'Dancing Script', cursive;
 	
-}
-.texts{
-width:50%;
 }
 </style>
 
@@ -75,17 +85,22 @@ width:50%;
 </div>
 </div>
 
-<div class="main">
-<div><img src="img/original.jpg" style="width:70%;border:3px solid white;"/></div>
-<div class="texts">
-<h1>About me</h1>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl diam, congue at lorem id, gravida consectetur mi. Etiam sed placerat mi.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl diam, congue at lorem id, gravida consectetur mi. Etiam sed placerat mi.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl diam, congue at lorem id, gravida consectetur mi. Etiam sed placerat mi.
-</p>
+<div class="ctc">
+<div class="main" id="contact">
+<div class="inside"><div data-aos="slide-up"><h1 class="abme">Contact</h1></div></div>
+<div class="footer">
+<div data-aos="fade-up-right"><input type="text" placeholder="First name"/></br></div>
+<div data-aos="fade-up-left"><input type="text" placeholder="Last Name"/></br></div>
+<div data-aos="fade-up-left"><input type="text" placeholder="Mobile Number"/></br></div>
+<div data-aos="fade-up-right"><input type="text" placeholder="Text me" id="textme"/></br></div>
+<button id="send">SEND</button>
 </div>
 </div>
 
+<div>
+<img src="img/cont.jpg" id="im"/>
+</div>
+
+</div>
 </body>
 </html>
