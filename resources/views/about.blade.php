@@ -9,5 +9,6 @@
 <body>
     <h1>Aisulu</h1>
     <a href="{{ route('welcome') }}"> Link to the welcome</a>
+    <h3>Hello world</h3>
 </body>
 </html>
