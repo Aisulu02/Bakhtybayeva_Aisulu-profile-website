@@ -29,6 +29,6 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact_me');
 
-Route::get('/main', function () {
+Route::get('/index', function () {
     return view('index');
-})->name('main');
+})->name('index');
