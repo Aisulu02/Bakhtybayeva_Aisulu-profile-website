@@ -39,9 +39,11 @@ Route::get('post/create', function () {
         'title' => 'LAB4',
         'body' => 'Aisulu Bakhtybayeva'
     ]);
+   
 }); 
 
 Route::get('post', function () {
     $post = Post::find(1);
     return $post; 
 });
+
