@@ -3,24 +3,20 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class ExampleTest extends TestCase
+class PostTest extends TestCase
 {
     /**
-     * A basic test example.
+     * A basic feature test example.
      *
      * @return void
      */
-    public function testBasicTest()
+    public function test_example()
     {
         $response = $this->get('/');
 
-        $response->assertStatus(200);
-    }
-
-    public function test_post_id_get_request(){
-        $response = $this->get('/post/1');
         $response->assertStatus(200);
     }
 }
