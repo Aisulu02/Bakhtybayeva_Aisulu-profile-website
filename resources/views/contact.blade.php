@@ -79,8 +79,8 @@ font-size:30px;
 <div data-aos="slide-down"><div><img src="img/dark.jpg" style="width:100%;height:105vh;border-bottom:3px solid white;"/></div></div>
 <div class="headi">
 <a href="#"><div data-aos="slide-up"><div class="head-item" onclick="window.location.reload();">MAIN</div></div></a>
-<a href="{{route('about_me')}}"><div data-aos="slide-up"><div class="head-item" id="ame">ABOUT ME</div></div></a>
-<a href="{{route('contact_me')}}"><div data-aos="slide-up"><div class="head-item" id="con">CONTACT</div></div></a>
+<a href="{{route('about')}}"><div data-aos="slide-up"><div class="head-item" id="ame">ABOUT ME</div></div></a>
+<a href="{{route('contact')}}"><div data-aos="slide-up"><div class="head-item" id="con">CONTACT</div></div></a>
 <a href="{{route('hobby')}}"><div data-aos="slide-up"><div class="head-item" id="hob">HOBBY</div></div></a>
 </div>
 </div>

@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
+
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +18,7 @@ use App\Models\Post;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('welcome');
+});
 
 Route::get('/about', function () {
     return view('about');
@@ -28,7 +30,7 @@ Route::get('/hobby', function () {
 
 Route::get('/contact', function () {
     return view('contact');
-})->name('contact_me');
+})->name('contact');
 
 Route::get('/index', function () {
     return view('index');
@@ -39,11 +41,9 @@ Route::get('post/create', function () {
         'title' => 'LAB4',
         'body' => 'Aisulu Bakhtybayeva'
     ]);
-   
 }); 
 
-Route::get('post', function () {
-    $post = Post::find(1);
-    return $post; 
-});
+Route::get('post', [BlogController::class, 'index']);
+
+
 
