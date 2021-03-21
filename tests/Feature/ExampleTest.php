@@ -19,8 +19,4 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_post_id_get_request(){
-        $response = $this->get('/post/1');
-        $response->assertStatus(200);
-    }
 }

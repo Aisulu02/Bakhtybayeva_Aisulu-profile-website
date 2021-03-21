@@ -36,18 +36,18 @@ Route::get('/index', function () {
     return view('index');
 })->name('index');
 
-Route::get('post/create', function () {
+/*Route::get('/post/create', function () {
     DB::table('post')->insert([
         'title' => 'LAB4',
         'body' => 'Aisulu Bakhtybayeva'
     ]);
-}); 
+}); */
 
 Route::get('post', [BlogController::class, 'index']);
-Route::get('blog/create', function() {
+Route::get('post/create', function() {
     return view('blog.create');
 });
 
-Route::post('blog/create', [BlogController::class, 'store'])->name('add-blog');
-
+Route::Post('post/create', [BlogController::class, 'store'])->name('add-blog');
+Route::get('/post/{id}', [BlogController::class, 'get_post']);
 
