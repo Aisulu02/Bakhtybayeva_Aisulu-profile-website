@@ -4,9 +4,11 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
 
+
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UploadFileController;
 use App\Http\Controllers\SendEmailController;
+use App\Http\Controllers\LocalizationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,9 +55,9 @@ Route::get('post/create', function() {
 Route::Post('post/create', [BlogController::class, 'store'])->name('add-blog');
 Route::get('/post/{id}', [BlogController::class, 'get_post']);
 
-/*Route::get('/uploadfile', 'App\Http\Controllers\UploadFileController@index');
-Route::post('/uploadfile', 'App\Http\Controllers\UploadFileController@showUploadFile');*/
+Route::get('language/{lang}', function($lang){
+    App::setlocale($lang);
+    return view('language');
+});
 
-Route::get('/sendemail', 'App\Http\Controllers\SendEmailController@index');
-Route::post('/sendemail/send', 'App\Http\Controllers\SendEmailController@send');
-
+Route::get('/{lang}', [LocalizationController::class, 'index']);
